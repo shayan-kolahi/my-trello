@@ -10,4 +10,42 @@
 }
 
 @import "primeicons/primeicons.css";
+@font-face {
+  font-family: 'iran-sans-bold';
+  src: url('../public/font/iran-sans-bold.ttf') format('ttf');
+  src: url('../public/font/iran-sans-bold.woff') format('woff');
+  src: url('../public/font/iran-sans-bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'iran-sans';
+  src: url('../public/font/iran-sans.ttf') format('ttf');
+  src: url('../public/font/iran-sans.woff') format('woff');
+  src: url('../public/font/iran-sans.woff2') format('woff2');
+}
 
+$fontFamily: 'iran-sans-bold', serif;
+$fontFamilyBold: 'iran-sans', serif;
+body {
+  font-family: $fontFamily;
+
+  &::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar
+  {
+    width: 8px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb
+  {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+  }
+
+  @apply bg-gray-100
+}
